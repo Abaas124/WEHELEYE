@@ -77,7 +77,7 @@ function App() {
                     </li>
 
                     <li>
-                        <a href="products" title="" class="text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Products </a>
+                        <a href="products" title="" class="text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Shop </a>
                     </li>
 
                     <li>
