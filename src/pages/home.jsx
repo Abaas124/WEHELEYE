@@ -145,7 +145,7 @@ export default function Home() {
 
 
         <div class="mt-8 text-center md:mt-16">
-            <a href="products" title="" class="inline-flex items-center justify-center py-4 font-semibold text-white transition-all duration-200 bg-fuchsia-600 border border-transparent rounded-md px-14 hover:bg-blue-700 focus:bg-blue-700" role="button">Se More</a>
+            <link to="products"  class="inline-flex items-center justify-center py-4 font-semibold text-white transition-all duration-200 bg-fuchsia-600 border border-transparent rounded-md px-14 hover:bg-blue-700 focus:bg-blue-700" role="button">Se More</link>
         </div>
     
 
