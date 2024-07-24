@@ -71,9 +71,10 @@ function App() {
 
             <div class="items-center mt-8 xl:mt-0 xl:flex xl:justify-end xl:space-x-8">
                 <ul class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 xl:justify-end">
+                    
                     <li>
-                        <a href="/" title="" class="text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Home </a>
-                        
+                    <a href="/" class="text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">Home</a>
+           
                     </li>
 
                     <li>
@@ -87,9 +88,10 @@ function App() {
                     <li>
                         <a href="about" title="" class="text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> About Us </a>
                     </li>
-
+                    
                     
                 </ul>
+                
 
                 <div class="w-full h-px mt-8 mb-5 xl:w-px xl:m-0 xl:h-6 bg-gray-50/20"></div>
 
