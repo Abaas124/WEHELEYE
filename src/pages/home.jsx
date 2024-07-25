@@ -1,7 +1,17 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { useState } from "react";
 import Products from "./products";
 
 export default function Home() {
+    const [price1,setprice1]=useState("$1399")
+    const [price2,setprice2]=useState("$1199")
+    const [price3,setprice3]=useState("$1299")
+    const applyDiscount1=()=>{
+        setprice1("$1299");
+        setprice2("$1099");
+        setprice3("$1199");
+    }
+    
     return (
 
         <>
@@ -50,10 +60,9 @@ export default function Home() {
                 <span class="text-gray-400 mr-3 uppercase text-xs">Del</span>
                 <p class="text-lg font-bold text-black truncate block capitalize">Del XPS 15</p>
                 <div class="flex items-center">
-                    <p class="text-lg font-semibold text-black cursor-auto my-3">$1299</p>
-                    <del>
-                        <p class="text-sm text-gray-600 cursor-auto ml-2">$1399</p>
-                    </del>
+                    
+                    <p class="text-lg font-semibold text-black cursor-auto my-3">{price1}</p>
+                    
                     <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -76,10 +85,8 @@ export default function Home() {
                 <span class="text-gray-400 mr-3 uppercase text-xs">Samsung</span>
                 <p class="text-lg font-bold text-black truncate block capitalize">S24 Ultra</p>
                 <div class="flex items-center">
-                    <p class="text-lg font-semibold text-black cursor-auto my-3">$1199</p>
-                    <del>
-                        <p class="text-sm text-gray-600 cursor-auto ml-2">$1299</p>
-                    </del>
+                    <p class="text-lg font-semibold text-black cursor-auto my-3">{price2}</p>
+                    
                     <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -102,10 +109,8 @@ export default function Home() {
                 <span class="text-gray-400 mr-3 uppercase text-xs">Apple</span>
                 <p class="text-lg font-bold text-black truncate block capitalize">iphone 15 pro max</p>
                 <div class="flex items-center">
-                    <p class="text-lg font-semibold text-black cursor-auto my-3">$1215</p>
-                    <del>
-                        <p class="text-sm text-gray-600 cursor-auto ml-2">$1299</p>
-                    </del>
+                    <p class="text-lg font-semibold text-black cursor-auto my-3">{price3}</p>
+                    
                     <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -147,11 +152,15 @@ export default function Home() {
 
 
         <div class="mt-8 text-center md:mt-16">
+
+        <button  onClick={applyDiscount1}  class="inline-flex items-center justify-center py-4 font-semibold text-white transition-all duration-200 bg-fuchsia-600 border border-transparent rounded-md px-14 hover:bg-blue-700 focus:bg-blue-700" role="button" >Discount</button>
         
-            <a href="products"  class="inline-flex items-center justify-center py-4 font-semibold text-white transition-all duration-200 bg-fuchsia-600 border border-transparent rounded-md px-14 hover:bg-blue-700 focus:bg-blue-700" role="button">Se More</a>
+        <br />
+        <br />
+        
+        <a href="products"  class="inline-flex items-center justify-center py-4 font-semibold text-white transition-all duration-200 bg-fuchsia-600 border border-transparent rounded-md px-14 hover:bg-fuchsia-600 focus:bg-fuchsia-600" role="button">Se More</a>
             
-            
-        </div>
+            </div>
     
 
 
